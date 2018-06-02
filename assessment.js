@@ -82,8 +82,7 @@ function longestString(strs) {
 function computeUserAverageAge(users) {
 	var age = 0;
 	for (var i = 0; i < users.length; i++) {
-		var usersAge = users[i].age;
-	    age = age + usersAge;
+	    age += users[i].age;
 	}
   	return Math.round(age / users.length);
 }
